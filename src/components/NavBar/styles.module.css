@@ -1,0 +1,36 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    box-shadow: 0px 15px 10px -15px var(--secondary);
+    height: 80px;
+    background: white;
+}
+
+.headerContainer ul {
+    display: flex;
+    list-style: none;
+}
+
+.headerContainer ul li {
+    padding-left: 10px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+
+.headerContainer li:hover{
+    color: var(--secondary);
+}
+
+.headerContainer  > div {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.headerContainer div:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
