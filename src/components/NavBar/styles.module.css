@@ -1,36 +1,35 @@
-.headerContainer {
+.headerContainer  nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem 4rem;
-    box-shadow: 0px 15px 10px -15px var(--secondary);
+
+    box-shadow: 0px 15px 10px -15px ;
     height: 80px;
-    background: white;
+    background: var(--white);
 }
 
-.headerContainer ul {
-    display: flex;
-    list-style: none;
+.headerContainer nav ul {
+    flex: 1;
+    text-align: right;
 }
 
-.headerContainer ul li {
-    padding-left: 10px;
-    margin-left: 20px;
-    font-size: 1.3rem;
+.headerContainer nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.5rem;
     cursor: pointer;
-    
+   
 }
 
-.headerContainer li:hover{
+.headerContainer a{
+    color: var(--black);
+}
+
+a:hover{
     color: var(--secondary);
 }
 
-.headerContainer  > div {
-    font-size: 2rem;
+.headerContainer div{
+    font-size: 1.9rem;
     font-weight: bolder;
-}
-
-.headerContainer div:hover{
-    color: var(--secondary);
-    cursor: pointer;
 }

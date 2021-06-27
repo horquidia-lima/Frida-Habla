@@ -8,6 +8,7 @@ function App() {
   return (
     <div className={styles.wrapper}>
       <NavBar/>
+      
       <ItemListContainer greeting="FRIDA HABLA te da la bienvenida"/>
     </div>
   );

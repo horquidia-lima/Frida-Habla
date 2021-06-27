@@ -1,4 +1,8 @@
-.cart{
-    display: flex;
-    background: var(--gray-50);
+.cart {
+    background: var(--secondary);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.cart span{
+    font-size: 1.8rem;
 }

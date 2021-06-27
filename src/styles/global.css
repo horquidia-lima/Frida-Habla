@@ -7,8 +7,8 @@
 }
 
 :root {
-    --white: #FFF;
-    --gray-50: #F7F8FA;
+    --white: #FFFFFF;
+    --gray-50: #FEFEFE;
     --black: #222;;
 
     --primary: #D948E0;
@@ -26,3 +26,5 @@ body{
     font-size: 1rem;
     color: var(--black);
 }
+
+

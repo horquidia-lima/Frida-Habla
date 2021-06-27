@@ -2,21 +2,23 @@ import React from 'react'
 import styles from './styles.module.css'
 import {CartWidget} from '../Cart/Cart'
 
+
 export const NavBar = () => {
     return (
         <header className={styles.headerContainer}>
-            <div>FRIDAHABLA</div>
+            
             <nav>
+                <div>FRIDAHABLA</div>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Productos</li>
-                    <li>Acerca de</li>
-                    <li>Contacto</li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/">Productos</a></li>
+                    <li><a href="/">Acerca de</a></li>
+                    <li><a href="/">Contacto</a></li>
                 </ul>
-            </nav>
-            <div>
-                <CartWidget/>
-            </div>
+                <div>
+                    <CartWidget/>
+                </div>
+            </nav>    
         </header>
     )
 }
