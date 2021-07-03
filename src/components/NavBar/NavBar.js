@@ -1,14 +1,13 @@
 import React from 'react'
 import styles from './styles.module.css'
-import {CartWidget} from '../Cart/Cart'
+import {CartWidget} from '../Cart/CartWidget'
 
 
 export const NavBar = () => {
     return (
         <header className={styles.headerContainer}>
-            
             <nav>
-                <div>FRIDAHABLA</div>
+                <a href="/">FridaHabla</a>
                 <ul>
                     <li><a href="/">Inicio</a></li>
                     <li><a href="/">Productos</a></li>

@@ -1,15 +1,17 @@
 import '../src/styles/global.css'
-import {NavBar} from './components/NavBar/NavBar'
-import {ItemListContainer} from './components/ItemList/ItemListContainer'
 import styles from '../src/styles/app.module.css'
+
+import {NavBar} from './components/NavBar/NavBar'
+import {SectionHome} from './components/Home/SectionHome'
+import { ItemCount } from './components/ItemCount/ItemCount'
 
 
 function App() {
   return (
     <div className={styles.wrapper}>
       <NavBar/>
-      
-      <ItemListContainer greeting="FRIDA HABLA te da la bienvenida"/>
+      <SectionHome/>
+      <ItemCount stock={5} initial={1} min={1}/>
     </div>
   );
 }

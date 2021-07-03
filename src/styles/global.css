@@ -7,24 +7,36 @@
 }
 
 :root {
-    --white: #FFFFFF;
-    --gray-50: #FEFEFE;
-    --black: #222;;
+    --dark-color: #141414;
+    --dark-color-light: #8a8a8a;
+    --dark-color-lighten: #f2f2f2;
+    --white-color: #fff;
 
     --primary: #D948E0;
     --secondary: #00f6b1;
-}
 
-html {
-    font-size: 62.5%
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --body-font: "Poppins", sans-serif;
 }
 
 body{
-    background: var(--gray-50);
-    font-family:  'Poppins', sans-serif;
-    font-weight: 400;
+    font-family:  var(--body-font);
+    font-weight: var(--font-medium);
     font-size: 1rem;
-    color: var(--black);
+    color: var(--dark-color);
+    line-height: 1.6;
+
+    min-block-size: 100vh;
+    margin: 0;
+
+    background: var(--dark-color-lighten);
+}
+
+a{
+    color: var(--dark-color);
 }
 
 
