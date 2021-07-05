@@ -12,7 +12,7 @@ export const Item = ({title, stock, price, img}) => {
           </div> 
           <div>
             <span>${price}</span>
-            <ItemCount stock={5} initial={1} min={1}/>
+            <ItemCount stock={stock} initial={1} min={1}/>
           </div>
           <button>Agregar al carrito</button>
         </section>
