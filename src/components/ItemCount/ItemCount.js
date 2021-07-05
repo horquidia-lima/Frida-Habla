@@ -19,13 +19,11 @@ export const ItemCount = ({stock, min, initial}) => {
 
     return(
         <div className={styles.itemCount}>
-            <p>Camisa tiger</p>
             <div>
                 <span onClick={handleRemove}>-</span>
                 <h3>{count}</h3>
                 <span onClick={handleAdd}>+</span>
             </div>
-            <button>Agregar al carrito</button>
         </div>
     )
 }

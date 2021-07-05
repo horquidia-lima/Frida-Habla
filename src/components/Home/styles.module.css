@@ -22,6 +22,12 @@
     font-weight: 700;
 }
 
+.sectionHome h2{
+    color: #317e85;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
 .sectionHome span{
     font-weight: 500;
 }

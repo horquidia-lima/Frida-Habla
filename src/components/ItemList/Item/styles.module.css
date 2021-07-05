@@ -1,0 +1,17 @@
+.item div:nth-of-type(3){
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item button {
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: .7rem 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+

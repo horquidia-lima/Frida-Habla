@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
-import shirtImg from '../../assets/images/camisaDos.png'
-import {ItemListContainer} from '../../components/ItemList/ItemListContainer'
+import shirtImg from '../../assets/camisaDos.png'
+
 
 export const SectionHome = () =>{
     return (
@@ -12,7 +12,7 @@ export const SectionHome = () =>{
 
             <div>
                 <span>New in</span>
-                <ItemListContainer greeting='FRIDA HABLA '/>
+                <h2>FRIDA HABLA <br/>te da la bienvenida</h2>
                 <p>Explora las nuevas colecciones de camisa</p>
                 <a href="/">Explore now</a>
             </div> 

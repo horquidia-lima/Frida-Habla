@@ -1,8 +1,4 @@
-.itemCount {
-    text-align: center;
-    margin-top: 8rem;
 
-}
 .itemCount > div{
     display: flex;
     align-items: center;
@@ -10,17 +6,10 @@
 }
 
 .itemCount span{
-    background: cornflowerblue;
+    border: 1px solid cornflowerblue;
     cursor: pointer;
-    padding: 0.25rem 0.9rem;
+    padding: 0.11rem 0.9rem;
     margin: 1rem;
     border-radius: 2rem;
 }
 
-.itemCount button{
-    background: cornflowerblue;
-    color: var(--white-color);
-    padding: 0.7rem 0.5rem;
-    border-radius: 2rem;
-    cursor: pointer;
-}

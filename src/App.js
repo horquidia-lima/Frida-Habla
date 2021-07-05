@@ -3,7 +3,7 @@ import styles from '../src/styles/app.module.css'
 
 import {NavBar} from './components/NavBar/NavBar'
 import {SectionHome} from './components/Home/SectionHome'
-import { ItemCount } from './components/ItemCount/ItemCount'
+import { ItemContainer } from './components/ItemList/ItemListContainer'
 
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
     <div className={styles.wrapper}>
       <NavBar/>
       <SectionHome/>
-      <ItemCount stock={5} initial={1} min={1}/>
+      <ItemContainer/>
+     
     </div>
   );
 }

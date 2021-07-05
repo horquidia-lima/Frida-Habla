@@ -1,5 +1,9 @@
-import styles from './styles.module.css'
+import {ItemList} from './ItemList'
 
-export const ItemListContainer = ({greeting}) => {
-    return <h1 className={styles.title}>{greeting} <br/>te da la bienvenida</h1>
+export const ItemContainer = () => {
+    return(
+        <>
+            <ItemList/>
+        </>
+    )
 }
