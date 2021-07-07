@@ -11,7 +11,7 @@ function App() {
     <div className={styles.wrapper}>
       <NavBar/>
       <SectionHome/>
-      <ItemContainer/>
+      <ItemContainer />
      
     </div>
   );
