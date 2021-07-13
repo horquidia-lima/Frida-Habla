@@ -1,30 +1,28 @@
-import {ItemList} from './ItemList'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react"
+import { useParams } from "react-router"
+import {ItemDetail} from './ItemDetail'
 
-export const ItemContainer = () => {
+export const ItemDetailContainer = () => {
+    const [itemP, setItemP] = useState()
 
-    const [products, setProducts] = useState([])
-
-    //Promise
-
+    const {id: idParamas} = useParams()
+    
     useEffect(() => {
-
-        const fetchingData = () => {
-            return new Promise((resolve, reject) =>{
+        const getItem = () => {
+            return new Promise((resolve) => {
                 setTimeout(() => {
-                    resolve(listArray)
+                    resolve(listArray.filter((itemFilter) => itemFilter.id.toString() === idParamas))
                 }, 2000)
             })
         }
-    
-        fetchingData()
-            .then((res) => {
-                setProducts(res)
-            })
 
-    },[])
-   
-    
+        
+            setItemP()
+            getItem().then((res) => setItemP(res))
+            
+        },[idParamas])
+
+
     const listArray = [
         {
             id: 1,
@@ -67,25 +65,12 @@ export const ItemContainer = () => {
             img: "./images/remera5.png",
             price: 900,
             stock: 7,
-        },
-        /*{
-            id: 7,
-            title: "Camisa Women's Day",
-            img: "./images/remera8.png",
-            price: 1000,
-            stock: 9,
-        },
-        {
-            id: 8,
-            title: "Camisa We Can Do it",
-            img: "./images/remera13.png",
-            price: 800,
-            stock: 4,
-        }*/
+        }
     ]
+
     return(
         <>
-            <ItemList products={products}/>
+            <ItemDetail item={itemP}/>
         </>
     )
 }

@@ -1,20 +1,23 @@
 import styles from './styles.module.css'
 import {ItemCount} from '../../ItemCount/ItemCount'
+import { Link } from 'react-router-dom'
 
-export const Item = ({title, stock, price, img}) => {
+export const Item = ({item}) => {
     return(
         <section className={styles.item}>
+          <Link to={`/item/${item.id}`}>
           <div>
-            <img src={img} alt={title}/>
+            <img src={item.img} alt={item.title}/>
           </div>  
           <div>
-              <h4>{title}</h4>
+              <h4>{item.title}</h4>
           </div> 
           <div>
-            <span>${price}</span>
-            <ItemCount stock={stock} initial={1} min={1}/>
+            <span>${item.price}</span>
+            <ItemCount stock={item.stock} initial={1} min={1}/>
           </div>
-          <button>Agregar al carrito</button>
+            <button>Agregar al carrito</button>
+          </Link>
         </section>
     )
 }
