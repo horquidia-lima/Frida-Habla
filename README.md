@@ -4,9 +4,9 @@
 
 🚀 Tecnologias
 
--HTML5
--CSS3
--REACT JS
+- HTML5
+- CSS3
+- REACT JS
 
 💻 Projeto
 
