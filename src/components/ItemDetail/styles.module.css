@@ -1,0 +1,26 @@
+.itemDetail{
+    display: flex;
+    gap: 20rem;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.itemDetail p , h1{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.itemDetail img {
+    width: 300px;
+}
+
+.itemDetail button {
+    width: 100%;
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: .6rem .8rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    margin-top: 5rem;
+}
+

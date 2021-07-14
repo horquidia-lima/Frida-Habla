@@ -11,12 +11,11 @@ export const ItemDetailContainer = () => {
         const getItem = () => {
             return new Promise((resolve) => {
                 setTimeout(() => {
-                    resolve(listArray.filter((itemFilter) => itemFilter.id.toString() === idParamas))
+                    resolve(listArray.find((itemFilter) => itemFilter.id.toString() === idParamas))
                 }, 2000)
             })
         }
 
-        
             setItemP()
             getItem().then((res) => setItemP(res))
             
@@ -70,7 +69,7 @@ export const ItemDetailContainer = () => {
 
     return(
         <>
-            <ItemDetail item={itemP}/>
+            <ItemDetail {...itemP}/>
         </>
     )
 }
