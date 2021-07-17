@@ -22,5 +22,10 @@
     border-radius: .5rem;
     font-size: .9rem;
     margin-top: 5rem;
+
+}
+
+.itemDetail > div:nth-of-type(2){
+    display: flex;
 }
 

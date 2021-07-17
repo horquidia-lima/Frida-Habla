@@ -1,8 +1,6 @@
 import  styles  from './styles.module.css'
-import React, {useState} from 'react'
 
-export const ItemCount = ({stock, min, initial}) => {
-    const [count, setCount] = useState(initial)
+export const ItemCount = ({stock, count, setCount, min}) => {
 
     function handleAdd(){
         if(count < stock){
