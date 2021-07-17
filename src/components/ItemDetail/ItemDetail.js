@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import {ItemCount} from '../ItemCount/ItemCount'
 import styles from './styles.module.css'
 
-export const ItemDetail = ({img, title, price, stock, initial}) => {
+export const ItemDetail = ({img, title, price, stock}) => {
 
-    const [count, setCount] = useState(initial)
+    const [count, setCount] = useState(1)
     const [finishBuy, setFinishBuy] = useState(false)
 
     const handleState = () => setFinishBuy(!finishBuy)
@@ -20,10 +20,11 @@ export const ItemDetail = ({img, title, price, stock, initial}) => {
                     <div>
                         <ItemCount 
                             stock={stock} 
-                            initial={1} 
+                             
                             min={1} 
                             count={count} 
-                            setCount={setCount}/>
+                            setCount={setCount}
+                        />
                         <button onClick={handleState}>Comprar</button>
                     </div>
                 ) : (
