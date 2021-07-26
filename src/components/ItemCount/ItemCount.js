@@ -15,6 +15,7 @@ export const ItemCount = ({stock, count, setCount, min}) => {
         }
     }
 
+
     return(
         <div className={styles.itemCount}>
             <div>

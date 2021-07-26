@@ -1,17 +1,71 @@
-.item div:nth-of-type(3){
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.description h3 {
+    color: var(--title);
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
 }
 
-.item button {
-    background: var(--dark-color);
-    color: var(--white-color);
-    padding: .7rem 1.3rem;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 100%;
+.price h4 {
+    color: var(--g8);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
 }
+
+.price h5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    margin-bottom: .6rem;
+}
+
+.price strong {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+
+    margin-left: .6rem;
+}
+
+.description p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+.price button {
+    background-image: url('../../../assets/carrito.png');
+    background-repeat: no-repeat;
+    
+    background-color: var(--dark-color-lighten);
+    border: 2px solid var(--title);
+    width: 60px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.stock strong {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: var(--alerta);
+}
+
+.stock button {
+    width: 151px;
+    height: 48px;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    border-radius: .6rem;
+
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
 
 

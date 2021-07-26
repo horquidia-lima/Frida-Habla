@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,27 +13,23 @@
     --dark-color-light: #8a8a8a;
     --dark-color-lighten: #f2f2f2;
     --white-color: #fff;
+    --g8: #505050;
 
-    --primary: #D948E0;
-    --secondary: #00f6b1;
+    --title: #317E85;
+    --alerta: #EC2227;
+    --font: 'Inter', sans-serif;;
+}
 
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    --font-bold: 700;
-
-    --body-font: "Poppins", sans-serif;
+html {
+    font-size: 62.5%;
 }
 
 body{
-    font-family:  var(--body-font);
-    font-weight: var(--font-medium);
-    font-size: 1rem;
+    font-family: var(--font);
     color: var(--dark-color);
-    line-height: 1.6;
+    font-size: 1.6rem;
 
     min-block-size: 100vh;
-    margin: 0;
-
     background: var(--dark-color-lighten);
 }
 
