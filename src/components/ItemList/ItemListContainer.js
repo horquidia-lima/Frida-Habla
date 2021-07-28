@@ -1,6 +1,7 @@
 import {ItemList} from './ItemList'
 import {useState, useEffect} from 'react'
 import { database } from '../../firebase/firebase'
+import styles from './styles.module.css'
 
 export const ItemContainer = () => {
 
@@ -18,6 +19,7 @@ export const ItemContainer = () => {
    
     return(
         <>
+            <h2 className={styles.title}>Productos Destacados</h2>
             <ItemList products={products}/>
         </>
     )

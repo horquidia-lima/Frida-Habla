@@ -6,6 +6,7 @@ export const Item = ({item}) => {
   const cuota = (item.price / 2).toFixed(2)
     return(
         <section className={styles.item}>
+            
             <img src={item.img} alt={item.nombre}/>
             <div className={styles.description}>
               <h3>{item.nombre}</h3>

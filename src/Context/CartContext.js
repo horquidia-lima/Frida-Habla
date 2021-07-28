@@ -1,16 +1,17 @@
-/*import React, {createContext, useState} from "react"
+import { createContext, useState } from "react";
 
-export const Context = createContext()
+export const CartContext = createContext()
 
-export const CartContextProvider = ({children}) => {
+export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
 
-    const addItem = (received) => cart.filter(item => item.id === received.id).length === 0
+    //verificar si esta en el carrito
+    const isInCart = (received) => cart.filter(item => item.id === received.id).length === 0
 
     const addToCart = (received) => {
-        if(addItem(received)){
+        if(isInCart(received)){
             setCart([...cart, received])
-        }else {
+        }else{
             alert('Ya esta en el carrito')
         }
     }
@@ -24,9 +25,9 @@ export const CartContextProvider = ({children}) => {
 
     return(
         <>
-            <CartContextProvider value={{removeItem, clearCart, addToCart}}>
+            <CartContext.Provider value={{removeItem, clearCart, addToCart}}>
                 {children}
-            </CartContextProvider>
+            </CartContext.Provider>
         </>
     )
-}*/
+}

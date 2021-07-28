@@ -1,10 +1,10 @@
-
+import cart from '../../assets/cart.png'
 import styles from './styles.module.css'
 
 export const CartWidget = () => {
     return (
         <div className={styles.cart}>
-            <i className="bx bx-shopping-bag"></i>
+            <img src={cart} alt="cart" width="30px" height="30px"/>
         </div>
     )
 }

@@ -1,8 +1,3 @@
-/*.cart {
-    background: var(--secondary);
-    padding: 0.5rem;
-    border-radius: 1rem;
+.cart {
+    cursor: pointer;
 }
-.cart span{
-    font-size: 1.8rem;
-}*/

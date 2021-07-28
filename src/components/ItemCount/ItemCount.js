@@ -1,6 +1,7 @@
 import  styles  from './styles.module.css'
 
 export const ItemCount = ({stock, count, setCount, min}) => {
+    
 
     function handleAdd(){
         if(count < stock){
@@ -18,11 +19,9 @@ export const ItemCount = ({stock, count, setCount, min}) => {
 
     return(
         <div className={styles.itemCount}>
-            <div>
                 <span onClick={handleRemove}>-</span>
                 <h3>{count}</h3>
                 <span onClick={handleAdd}>+</span>
-            </div>
         </div>
     )
 }

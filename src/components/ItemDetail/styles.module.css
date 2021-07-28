@@ -1,31 +1,47 @@
-.itemDetail{
+.itemDetail {
     display: flex;
-    gap: 20rem;
-    width: 80%;
-    margin: 5rem auto;
-}
-
-.itemDetail p , h1{
-    margin-top: 3rem;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .itemDetail img {
-    width: 300px;
+   width: 250px;
+    
 }
 
-.itemDetail button {
-    width: 100%;
-    background: var(--dark-color);
+.btn {
+    display: inline-block;
+    background: var(--title);
     color: var(--white-color);
-    padding: .6rem .8rem;
-    border-radius: .5rem;
-    font-size: .9rem;
-    margin-top: 5rem;
-
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
 }
 
-.itemDetail > div:nth-of-type(2){
-    display: flex;
+.btn:nth-child(2){
+    margin-left: 10px;
 }
 
+
+.itemDetail h1{
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.itemDetail h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: var (--link);
+}
+
+.itemDetail select {
+    display: block;
+    padding: 10px;
+    border: 1px solid var(--title);
+}
+
+.itemDetail select:focus {
+    overflow: none;
+}

@@ -10,7 +10,7 @@
 
 :root {
     --dark-color: #141414;
-    --dark-color-light: #8a8a8a;
+    --link : #555;
     --dark-color-lighten: #f2f2f2;
     --white-color: #fff;
     --g8: #505050;
@@ -26,15 +26,9 @@ html {
 
 body{
     font-family: var(--font);
-    color: var(--dark-color);
     font-size: 1.6rem;
-
-    min-block-size: 100vh;
-    background: var(--dark-color-lighten);
 }
 
-a{
-    color: var(--dark-color);
-}
+
 
 

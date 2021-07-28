@@ -1,8 +1,9 @@
 
-.itemCount > div{
+.itemCount{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-top: 20px;
+   
 }
 
 .itemCount span{
@@ -12,4 +13,5 @@
     margin: 1rem;
     border-radius: 2rem;
 }
+
 

@@ -4,14 +4,15 @@ import {ItemDetail} from './ItemDetail'
 import { database } from "../../firebase/firebase"
 
 export const ItemDetailContainer = () => {
-    const [itemP, setItemP] = useState()
+    const [item, setItem] = useState([])
+    //const [loading, setLoading] = useState(false)
 
     const {id} = useParams()
 
     useEffect(() => {
         const itemCollection = database.collection('camisas')
             itemCollection.get().then((query) => {
-                setItemP(
+                setItem(
                     query.docs.map(doc => ({id: doc.id, ...doc.data()})).find((value) => value.id === id)
                 )
             })
@@ -19,7 +20,7 @@ export const ItemDetailContainer = () => {
     
     return(
         <>
-            <ItemDetail {...itemP}/>
+            <ItemDetail item={item}/>
         </>
     )
 }
