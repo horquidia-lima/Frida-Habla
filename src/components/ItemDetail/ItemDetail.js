@@ -8,15 +8,16 @@ export const ItemDetail = ({item}) => {
     const stock = item.stock
 
     const [finishBuy, setFinishBuy] = useState(false)
-    const [count, setCount] = useState(1)
+
 
     //Context
-    const {addToCart, removeItem} = useContext(CartContext)
+    const {addToCart, removeItem, count, setCount} = useContext(CartContext)
+    
 
     const handleState = () => setFinishBuy(!finishBuy)
 
    
-    const handleOnAdd = () => {
+   const handleOnAdd = () => {
         addToCart({...item, quantity: count})
     }
 
