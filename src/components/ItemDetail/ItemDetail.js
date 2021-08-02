@@ -22,6 +22,10 @@ export const ItemDetail = ({item}) => {
         addToCart({...item, quantity: count})
     }
 
+    /*const handleRemove = (item) => {
+        removeItem(item.id)
+    }*/
+
     return(
         <div className={styles.itemDetail}>  
             <img src={item.img} alt={item.nombre}/>
@@ -61,7 +65,7 @@ export const ItemDetail = ({item}) => {
                         className={styles.btn}
                         onClick={() => {
                             handleState()
-                        
+                            //handleRemove()
                     }}
                     >
                         Modificar compra

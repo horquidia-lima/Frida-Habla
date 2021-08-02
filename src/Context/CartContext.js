@@ -32,7 +32,7 @@ export const CartProvider = ({children}) => {
         return cart.reduce((a, b) => (a += b.quantity), 0)
     }
 
-    const clearCart = () => setCart([])
+    //const clearCart = () => setCart([])
 
     return(
         <>

@@ -6,9 +6,7 @@ import styles from './styles.module.css'
 export const Cart = () => {
     const {itemsPrice, cart, removeItem } = useContext(CartContext)
 
-    const handleRemove = (i) => {
-        removeItem(i.id)
-    }
+    
     return (
         <>
           {cart.map((item) => (
@@ -20,15 +18,21 @@ export const Cart = () => {
                       <p>{item.nombre}</p>
                       <span><strong>$ {item.price}</strong> X {item.quantity}</span>
                       <br/>
-                      <button onClick={() => handleRemove(item)}>Remover</button>
+                      <button onClick={() => removeItem(item)}>Remover</button>
                   </div>  
               </div>
              
-          ))} 
-                <div className={styles.total}>
-                    <h4>Total : ${itemsPrice()}</h4>
-                </div>
-    
+          ))} {cart.length === 0 ? (
+              <div className={styles.alert}>
+                  <h3>Sin item agregado</h3>
+                  <a href="/">Volver al inicio</a>
+              </div>
+                
+          ) : (
+            <div className={styles.total}>
+                <h4>Total : ${itemsPrice()}</h4>
+            </div>
+          )}
         </>
     )
 }

@@ -13,21 +13,19 @@ function App() {
   return (
     <Router>
       <div className={styles.wrapper}>
-        <CartProvider>
+      <CartProvider>
           <NavBar/>
             <Route exact path="/">
               <SectionHome/>
               <ItemContainer/>
             </Route>
+            
             <Switch>
             <Route path="/item/:id">
               <ItemDetailContainer/>
             </Route>
-            <Route>
-              <Cart path="/cart"/>
-            </Route>
-            <Route path="*">
-              <div>ESA RUTA NO EXISTE</div>
+            <Route path="/cart">
+              <Cart />
             </Route>
             </Switch>
           </CartProvider>

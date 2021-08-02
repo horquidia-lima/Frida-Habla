@@ -33,3 +33,24 @@
     margin-top: 20px;
 }
 
+.alert h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--alerta);
+    font-size: 2.9rem;
+}
+
+.alert a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--alerta);
+    width: 10%;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
