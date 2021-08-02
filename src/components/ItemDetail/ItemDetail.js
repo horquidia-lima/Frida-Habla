@@ -6,12 +6,13 @@ import styles from './styles.module.css'
 
 export const ItemDetail = ({item}) => {
     const stock = item.stock
+    const [count, setCount] = useState(0)
 
     const [finishBuy, setFinishBuy] = useState(false)
 
 
     //Context
-    const {addToCart, removeItem, count, setCount} = useContext(CartContext)
+    const {addToCart, removeItem} = useContext(CartContext)
     
 
     const handleState = () => setFinishBuy(!finishBuy)
