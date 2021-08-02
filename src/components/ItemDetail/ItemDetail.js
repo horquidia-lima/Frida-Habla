@@ -12,7 +12,7 @@ export const ItemDetail = ({item}) => {
 
 
     //Context
-    const {addToCart, removeItem} = useContext(CartContext)
+    const {addToCart} = useContext(CartContext)
     
 
     const handleState = () => setFinishBuy(!finishBuy)
@@ -20,10 +20,6 @@ export const ItemDetail = ({item}) => {
    
    const handleOnAdd = () => {
         addToCart({...item, quantity: count})
-    }
-
-    const handleRemove = () => {
-        removeItem(item)
     }
 
     return(
@@ -64,7 +60,6 @@ export const ItemDetail = ({item}) => {
                     <button 
                         className={styles.btn}
                         onClick={() => {
-                            handleRemove()
                             handleState()
                         
                     }}

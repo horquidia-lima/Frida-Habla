@@ -24,13 +24,14 @@ function App() {
               <ItemDetailContainer/>
             </Route>
             <Route>
-              <Cart path="/cart" />
+              <Cart path="/cart"/>
             </Route>
             <Route path="*">
               <div>ESA RUTA NO EXISTE</div>
             </Route>
-          </Switch>
+            </Switch>
           </CartProvider>
+         
       </div>
     </Router>
   );
