@@ -1,5 +1,6 @@
 
-![image](https://user-images.githubusercontent.com/63380921/125542882-50f5f553-d521-436e-b61f-777be0db4f3f.png)
+![image](https://user-images.githubusercontent.com/63380921/128605133-383f33ca-089a-49f2-b13c-fa81b35ab9b1.png)
+
 
 
 🚀 Tecnologias
@@ -7,6 +8,7 @@
 - HTML5
 - CSS3
 - REACT JS
+- Firebase
 
 💻 Projeto
 
