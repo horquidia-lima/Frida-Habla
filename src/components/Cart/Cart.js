@@ -1,10 +1,12 @@
 import React from 'react'
 import { useContext } from 'react'
 import {CartContext} from '../../Context/CartContext'
+import { Form } from '../Form/Form'
 import styles from './styles.module.css'
 
+
 export const Cart = () => {
-    const {itemsPrice, cart, removeItem } = useContext(CartContext)
+    const {itemsPrice, cart, removeItem, clearCart } = useContext(CartContext)
 
     
     return (
@@ -31,6 +33,7 @@ export const Cart = () => {
           ) : (
             <div className={styles.total}>
                 <h4>Total : ${itemsPrice()}</h4>
+                <Form cart={cart} itemsPrice={itemsPrice} clearCart={clearCart}/>
             </div>
           )}
         </>

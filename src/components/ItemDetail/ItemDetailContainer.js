@@ -6,15 +6,17 @@ import { database } from "../../firebase/firebase"
 
 export const ItemDetailContainer = () => {
     const [item, setItem] = useState([])
-    //const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     const {id} = useParams()
 
     useEffect(() => {
+        setLoading(false)
         const itemCollection = database.collection('camisas')
             itemCollection.get().then((query) => {
                 setItem(
                     query.docs.map(doc => ({id: doc.id, ...doc.data()})).find((value) => value.id === id)
+                   
                 )
             })
             
@@ -22,10 +24,7 @@ export const ItemDetailContainer = () => {
     
     return(
         <>
-      
-            <ItemDetail item={item}/>
-
-           
+            { loading ? "Cargando Producto..." : <ItemDetail item={item}/>}  
         </>
     )
 }

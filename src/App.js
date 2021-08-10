@@ -9,6 +9,7 @@ import {ItemDetailContainer} from './components/ItemDetail/ItemDetailContainer'
 import { CartProvider } from './Context/CartContext'
 import {Cart} from './components/Cart/Cart'
 
+
 function App() {
   return (
     <Router>
