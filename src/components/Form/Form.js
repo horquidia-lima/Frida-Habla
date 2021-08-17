@@ -15,7 +15,7 @@ export const Form = ({cart, itemsPrice, clearCart}) => {
     })*/
 
     const handleSubmit = (e) => {
-        e.event.preventDefault()
+        e.preventDefault()
 
         const userData = {
             name: e.target[0].value,
@@ -33,7 +33,7 @@ export const Form = ({cart, itemsPrice, clearCart}) => {
 
         let orderId
 
-        orders
+       /* orders
          .add(newOrder)
          .then((res) => {
              orderId = res.id
@@ -42,7 +42,7 @@ export const Form = ({cart, itemsPrice, clearCart}) => {
          })
          .catch((error) => {
              alert('Error:  ' + error)
-         })
+         })*/
 
          const itemsToCheck = database.collection('items').where(
              firebase.firestore.FieldPath.documentId(),
@@ -67,7 +67,16 @@ export const Form = ({cart, itemsPrice, clearCart}) => {
 
              if(autoOfStockItems.length === 0){
                  batch.commit().then(() => {
-                     //alert('Compra generada con exito \n ID: ' + orderId)
+                    orders
+                    .add(newOrder)
+                    .then((res) => {
+                        orderId = res.id
+                        alert('Compra generada con exito \n ID: ' + orderId)
+                       
+                    })
+                    .catch((error) => {
+                        alert('Error:  ' + error)
+                    })
 
                      clearCart()
                  })
