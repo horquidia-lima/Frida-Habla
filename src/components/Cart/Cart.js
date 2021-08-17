@@ -33,7 +33,7 @@ export const Cart = () => {
           ) : (
             <div className={styles.total}>
                 <h4>Total : ${itemsPrice()}</h4>
-                <Form cart={cart} itemsPrice={itemsPrice} clearCart={clearCart}/>
+                <Form cart={cart} itemsPrice={itemsPrice()} clearCart={clearCart}/>
             </div>
           )}
         </>

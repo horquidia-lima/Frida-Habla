@@ -7,7 +7,7 @@ import telefono from '../../assets/telephone.svg'
 import login from '../../assets/log-in.svg'
 import {database} from '../../firebase/firebase'
 
-export const Form = ({cart, itemPrice, clearCart}) => {
+export const Form = ({cart, itemsPrice, clearCart}) => {
     /*const [form, setForm] = useState({
         name: '',
         email: '',
@@ -26,7 +26,7 @@ export const Form = ({cart, itemPrice, clearCart}) => {
         const newOrder = {
             buyer: userData,
             items: cart,
-            total: itemPrice,
+            total: itemsPrice,
         }
 
         const orders = database.collection('orders')
@@ -37,6 +37,8 @@ export const Form = ({cart, itemPrice, clearCart}) => {
          .add(newOrder)
          .then((res) => {
              orderId = res.id
+             alert('Compra generada con exito \n ID: ' + orderId)
+            
          })
          .catch((error) => {
              alert('Error:  ' + error)
@@ -65,7 +67,7 @@ export const Form = ({cart, itemPrice, clearCart}) => {
 
              if(autoOfStockItems.length === 0){
                  batch.commit().then(() => {
-                     alert('Compra generada con exito \n ID: ' + orderId)
+                     //alert('Compra generada con exito \n ID: ' + orderId)
 
                      clearCart()
                  })
