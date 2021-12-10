@@ -29,4 +29,5 @@ El proyecto se compone de :
  
  Comandos: yarn install - yarn start
  Links : frida-habla.netlify.app/
+ Figma: https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news/duplicate?node-id=1%3A2
 
